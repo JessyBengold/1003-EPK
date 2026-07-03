@@ -288,3 +288,21 @@ cite{
   .social-row img{width:34px}
   .modal-actions{grid-template-columns:1fr}
 }
+
+.live-list{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.live-list li{
+    padding:10px 0;
+    border-bottom:1px solid rgba(255,255,255,.08);
+    color:var(--muted);
+    font-size:18px;
+    line-height:1.4;
+}
+
+.live-list li:last-child{
+    border-bottom:none;
+}
