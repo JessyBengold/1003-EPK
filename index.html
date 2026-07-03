@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>1003 — EPK</title>
+  <meta name="description" content="EPK officiel de 1003 — Art Pop, Rock Industriel, Techno.">
+  <style>
+    :root{
+      --bg:#000;
+      --fg:#f5f2ea;
+      --muted:#b8b2a8;
+      --line:rgba(255,255,255,.22);
+      --accent:#d69a3d;
+      --max:1080px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--fg);
+      font-family:Arial, Helvetica, sans-serif;
+      line-height:1.45;
+    }
+    a{color:inherit}
+    img{display:block; width:100%; height:auto}
+    .wrap{width:min(var(--max), calc(100% - 40px)); margin:auto}
+    .hero{
+      min-height:100svh;
+      display:grid;
+      align-items:center;
+      padding:64px 0;
+    }
+    .logo{
+      width:min(560px, 92%);
+      margin:0 auto 56px;
+    }
+    .kicker{
+      text-align:center;
+      color:var(--accent);
+      letter-spacing:.18em;
+      text-transform:uppercase;
+      font-size:12px;
+      margin:0 0 18px;
+    }
+    h1{
+      font-size:clamp(38px, 9vw, 112px);
+      line-height:.88;
+      letter-spacing:-.07em;
+      text-align:center;
+      margin:0;
+      font-weight:800;
+    }
+    .tagline{
+      max-width:760px;
+      margin:34px auto 0;
+      text-align:center;
+      color:var(--fg);
+      font-size:clamp(18px, 2.4vw, 28px);
+    }
+    .hero-actions{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:12px;
+      margin:44px auto 0;
+      max-width:760px;
+    }
+    .btn{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:54px;
+      padding:14px 18px;
+      border:1px solid var(--line);
+      text-decoration:none;
+      text-transform:uppercase;
+      letter-spacing:.12em;
+      font-size:12px;
+      font-weight:700;
+      transition:.18s ease;
+    }
+    .btn:hover{border-color:var(--accent); color:var(--accent)}
+    section{padding:86px 0; border-top:1px solid rgba(255,255,255,.08)}
+    .grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:42px;
+      align-items:center;
+    }
+    h2{
+      margin:0 0 24px;
+      font-size:clamp(28px, 5vw, 58px);
+      line-height:.95;
+      letter-spacing:-.045em;
+    }
+    p{font-size:18px; color:var(--muted); margin:0 0 18px}
+    .lead{font-size:clamp(19px, 2.2vw, 25px); color:var(--fg)}
+    .media{
+      border:1px solid rgba(255,255,255,.12);
+      background:#090909;
+    }
+    .video{
+      position:relative;
+      aspect-ratio:16/9;
+      width:100%;
+      overflow:hidden;
+      background:#111;
+      border:1px solid rgba(255,255,255,.12);
+    }
+    .video iframe{
+      position:absolute; inset:0;
+      width:100%; height:100%;
+      border:0;
+    }
+    .links{
+      display:flex;
+      justify-content:center;
+      gap:18px;
+      flex-wrap:wrap;
+      margin-top:38px;
+    }
+    .links a{
+      text-decoration:none;
+      color:var(--muted);
+      text-transform:uppercase;
+      letter-spacing:.14em;
+      font-size:12px;
+      font-weight:700;
+    }
+    .links a:hover{color:var(--accent)}
+    .downloads{
+      max-width:860px;
+      margin:auto;
+      text-align:center;
+    }
+    .download-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:14px;
+      margin-top:32px;
+    }
+    .download-card{
+      border:1px solid var(--line);
+      padding:24px 16px;
+      text-decoration:none;
+      min-height:104px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+    }
+    .download-card span:first-child{
+      color:var(--accent);
+      font-size:11px;
+      letter-spacing:.18em;
+      text-transform:uppercase;
+      margin-bottom:6px;
+    }
+    .download-card span:last-child{
+      font-weight:800;
+      font-size:22px;
+      letter-spacing:.04em;
+    }
+    .contact{
+      text-align:center;
+      padding-bottom:110px;
+    }
+    .contact p{color:var(--fg)}
+    .small{font-size:13px; color:var(--muted)}
+    @media (max-width:760px){
+      .wrap{width:min(100% - 28px, var(--max))}
+      .hero{padding:44px 0; min-height:auto}
+      .logo{margin-bottom:38px}
+      .hero-actions, .download-grid{
+        grid-template-columns:1fr;
+      }
+      .grid{grid-template-columns:1fr; gap:28px}
+      section{padding:62px 0}
+      .btn{min-height:50px}
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <header class="hero">
+      <div class="wrap">
+        <img class="logo" src="https://share1.cloudhq-mkt3.net/211ab44787b07e.jpeg" alt="1003">
+        <p class="kicker">Electronic / Industrial / Art Pop</p>
+        <h1>1003<br>EPK</h1>
+        <p class="tagline">
+          1003 fusionne Art Pop, Rock Industriel et Techno dans un univers brutal, raffiné, cinématique et introspectif.
+        </p>
+        <nav class="hero-actions">
+          <a class="btn" href="#video">Watch live session</a>
+          <a class="btn" href="#downloads">Downloads</a>
+          <a class="btn" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section>
+      <div class="wrap grid">
+        <div>
+          <h2>À propos</h2>
+          <p class="lead">
+            À l’équilibre entre David Bowie, Nine Inch Nails, Gesaffelstein et James Blake.
+          </p>
+          <p>
+            1003 mêle puissance et fragilité, grooves hypnotiques et paysages sonores immersifs dans une signature immédiatement identifiable.
+          </p>
+          <p>
+            Sur scène, l’explosivité du projet se dévoile dans une forme dense, physique et immersive.
+          </p>
+        </div>
+        <div class="media">
+          <img src="https://share1.cloudhq-mkt3.net/884cfe270614de.jpeg" alt="1003 live / press visual">
+        </div>
+      </div>
+    </section>
+
+    <section id="video">
+      <div class="wrap">
+        <h2>Live session</h2>
+        <p class="lead">“The End” — live session officielle.</p>
+        <div class="video">
+          <iframe src="https://www.youtube.com/embed/nYrp5ycm0Ps" title="1003 — The End Live Session" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="downloads">
+      <div class="wrap downloads">
+        <h2>Downloads</h2>
+        <p>Documents techniques, EPK et éléments de programmation.</p>
+        <div class="download-grid">
+          <a class="download-card" href="EPK.pdf" target="_blank" rel="noopener">
+            <span>Download</span><span>EPK</span>
+          </a>
+          <a class="download-card" href="https://drive.google.com/file/d/1VfgDSn5XzcuvcKasqzpg5sgijc0sTNuW/view?usp=drive_link" target="_blank" rel="noopener">
+            <span>Download</span><span>Rider</span>
+          </a>
+          <a class="download-card" href="https://drive.google.com/file/d/1qWmzGlSgHFnibY8YZKWJg0N5kRtb0XUp/view?usp=drive_link" target="_blank" rel="noopener">
+            <span>Download</span><span>Patch</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <h2>Liens</h2>
+        <div class="links">
+          <a href="https://www.instagram.com/1003theband/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://open.spotify.com/intl-fr/artist/7oRf9U2ShkloDfKV1LVHjK" target="_blank" rel="noopener">Spotify</a>
+          <a href="https://www.youtube.com/@1003theband" target="_blank" rel="noopener">YouTube</a>
+          <a href="https://1003.bandcamp.com/" target="_blank" rel="noopener">Bandcamp</a>
+          <a href="https://beacons.ai/1003theband" target="_blank" rel="noopener">Beacons</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="wrap">
+        <h2>Contact</h2>
+        <p>Jessy Bengold</p>
+        <p><a href="mailto:contact@1003theband.com">contact@1003theband.com</a></p>
+        <p><a href="https://wa.me/33601190900" target="_blank" rel="noopener">WhatsApp : +33 6 01 19 09 00</a></p>
+        <p class="small">Ι 0 0 Ξ — 1003</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
