@@ -96,28 +96,26 @@ p{
   font-size:18px;
 }
 .image-frame{
-  position:relative;
-  width:100%;
-  margin:0;
-  overflow:hidden;
-  border:none;
-  background:transparent;
+    position:relative;
+    width:100%;
+    margin:0;
+    overflow:hidden;
 }
 
 .image-frame img{
-  display:block;
-  width:100%;
-  height:auto;
-  object-fit:cover;
-  transition:transform .7s ease;
+    display:block;
+    width:100%;
+    aspect-ratio:4/5;
+    object-fit:cover;
+    transition:transform .8s ease;
 }
 
 .image-frame:hover img{
-  transform:scale(1.04);
+    transform:scale(1.05);
 }
 .two-col{
-  grid-template-columns:40% 60%;
-  gap:80px;
+    grid-template-columns:38% 62%;
+    gap:90px;
   align-items:center;
 }
 #live .image-frame{
