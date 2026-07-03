@@ -9,24 +9,48 @@
   <meta property="og:description" content="Art Pop, Rock Industriel, Techno — brutal, raffiné, cinématique.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://share1.cloudhq-mkt3.net/884cfe270614de.jpeg">
+  <link rel="icon" href="/favicon.ico">
+  <!-- Preconnect to speed up external images/fonts if you use them -->
+  <link rel="preload" as="image" href="Images%20Github%20EPK/HEADBANNER.jpg">
   <link rel="stylesheet" href="style.css">
+  <!-- Structured data for better discovery -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicGroup",
+    "name": "1003",
+    "url": "https://your-site.example",
+    "description": "1003 fusionne Art Pop, Rock Industriel et Techno dans un univers brutal, raffiné, cinématique et introspectif.",
+    "sameAs": [
+      "https://www.instagram.com/1003theband/",
+      "https://www.youtube.com/@1003theband",
+      "https://1003.bandcamp.com/"
+    ]
+  }
+  </script>
 </head>
 
 <body>
-  <main class="site">
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <main id="main" class="site">
 
     <header class="hero" id="top">
       <div class="wrap hero-inner reveal">
-        <img class="logo-main" src="<img src="Images%20Github%20EPK/HEADBANNER.jpg" alt="1003 live">" alt="1003">
+        <!-- Fixed malformed img tag and preloaded hero image -->
+        <img class="logo-main" src="Images%20Github%20EPK/HEADBANNER.jpg" alt="1003 — bannière" width="1600" height="500" loading="eager">
+
         <p class="kicker">Electronic / Industrial / Art Pop</p>
         <p class="tagline">
           1003 fusionne Art Pop, Rock Industriel et Techno dans un univers brutal, raffiné, cinématique et introspectif.
         </p>
 
         <nav class="hero-nav" aria-label="Navigation EPK">
-          <a href="#video">Watch live session</a>
-          <a href="#downloads">Downloads</a>
-          <a href="#contact">Contact</a>
+          <ul>
+            <li><a href="#video">Watch live session</a></li>
+            <li><a href="#downloads">Downloads</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -40,13 +64,13 @@
             À l’équilibre entre David Bowie, Nine Inch Nails, Thom Yorke et James Blake, le quatuor français mêle puissance et fragilité,
             grooves hypnotiques et paysages sonores immersifs dans une signature immédiatement identifiable, à la fois cinématique et introspective.
           </p>
-          <p>
-            En live, c’est l’explosivité et la brutalité du son qui se dévoilent.
-          </p>
+          <p>En live, c’est l’explosivité et la brutalité du son qui se dévoilent.</p>
         </div>
 
         <figure class="image-frame">
-          <img src="<img src="Images%20Github%20EPK/BAND.PNG.jpg" alt="1003 live">" alt="1003 live / press visual">
+          <!-- Fixed malformed img tag, added loading and alt -->
+          <img src="Images%20Github%20EPK/BAND.PNG.jpg" alt="1003 en live, photo de presse" loading="lazy" width="800" height="533">
+          <figcaption class="sr-only">Photo presse — 1003 live</figcaption>
         </figure>
       </div>
     </section>
@@ -58,48 +82,43 @@
             src="https://www.youtube.com/embed/nYrp5ycm0Ps?rel=0&modestbranding=1"
             title="1003 - The End Live Session"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
+            allowfullscreen
+            loading="lazy">
           </iframe>
         </div>
       </div>
     </section>
 
-<section class="section" id="live">
-  <div class="wrap grid two-col reveal">
+    <section class="section" id="live">
+      <div class="wrap grid two-col reveal">
+        <div>
+          <h2>Live</h2>
+          <p style="margin-bottom:28px;">Selected performances</p>
 
-    <div>
-      <h2>Live</h2>
+          <ul class="live-list">
+            <li>2026 — Festival / Venue — City</li>
+            <li>2026 — Festival / Venue — City</li>
+            <li>2026 — Festival / Venue — City</li>
+            <li>2026 — Festival / Venue — City</li>
+            <li>2025 — Festival / Venue — City</li>
+            <li>2025 — Festival / Venue — City</li>
+            <li>2025 — Festival / Venue — City</li>
+            <li>2025 — Festival / Venue — City</li>
+            <li>2024 — Festival / Venue — City</li>
+            <li>2024 — Festival / Venue — City</li>
+          </ul>
+        </div>
 
-      <p style="margin-bottom:28px;">
-        Selected performances
-      </p>
-
-      <ul class="live-list">
-        <li>2026 — Festival / Venue — City</li>
-        <li>2026 — Festival / Venue — City</li>
-        <li>2026 — Festival / Venue — City</li>
-        <li>2026 — Festival / Venue — City</li>
-        <li>2025 — Festival / Venue — City</li>
-        <li>2025 — Festival / Venue — City</li>
-        <li>2025 — Festival / Venue — City</li>
-        <li>2025 — Festival / Venue — City</li>
-        <li>2024 — Festival / Venue — City</li>
-        <li>2024 — Festival / Venue — City</li>
-      </ul>
-
-    </div>
-
-    <figure class="image-frame">
-      <img src="<img src="Images%20Github%20EPK/LIVE.png" alt="1003 live">" alt="1003 live">
-    </figure>
-
-  </div>
-</section>
+        <figure class="image-frame">
+          <img src="Images%20Github%20EPK/LIVE.png" alt="1003 live" loading="lazy" width="800" height="533">
+        </figure>
+      </div>
+    </section>
     
     <section class="section" id="presse">
       <div class="wrap grid two-col reveal">
         <figure class="image-frame">
-          <img src="Images%20Github%20EPK/DAVID.png" alt="1003 presse">
+          <img src="Images%20Github%20EPK/DAVID.png" alt="Presse 1003" loading="lazy" width="600" height="400">
         </figure>
 
         <div>
@@ -128,17 +147,17 @@
         <h2 class="center">Downloads</h2>
 
         <div class="download-grid">
-          <a class="download-card" href="https://drive.google.com/drive/folders/1EQS9Rs9G4BqkwMEI6n2nkFjMTMk5qPyb?usp=drive_link" target="_blank" rel="noopener">
+          <a class="download-card" href="https://drive.google.com/drive/folders/1EQS9Rs9G4BqkwMEI6n2nkFjMTMk5qPyb?usp=drive_link" target="_blank" rel="noopener noreferrer">
             <span>Download</span>
             <strong>Promo Pack</strong>
           </a>
 
-          <a class="download-card" href="https://drive.google.com/file/d/1VfgDSn5XzcuvcKasqzpg5sgijc0sTNuW/view?usp=drive_link" target="_blank" rel="noopener">
+          <a class="download-card" href="https://drive.google.com/file/d/1VfgDSn5XzcuvcKasqzpg5sgijc0sTNuW/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
             <span>Download</span>
             <strong>Rider</strong>
           </a>
 
-          <a class="download-card" href="https://drive.google.com/file/d/1qWmzGlSgHFnibY8YZKWJg0N5kRtb0XUp/view?usp=drive_link" target="_blank" rel="noopener">
+          <a class="download-card" href="https://drive.google.com/file/d/1qWmzGlSgHFnibY8YZKWJg0N5kRtb0XUp/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
             <span>Download</span>
             <strong>Patch</strong>
           </a>
@@ -151,47 +170,48 @@
         <h2>Contact</h2>
 
         <div class="social-row" aria-label="Liens sociaux">
-          <a href="https://www.instagram.com/1003theband/" target="_blank" rel="noopener" aria-label="Instagram">
-            <img src="https://share1.cloudhq-mkt3.net/4eca9bdcc358e2.png" alt="">
+          <a href="https://www.instagram.com/1003theband/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <img src="https://share1.cloudhq-mkt3.net/4eca9bdcc358e2.png" alt="Instagram" loading="lazy" width="48" height="48">
           </a>
 
-          <a href="https://www.youtube.com/@1003theband" target="_blank" rel="noopener" aria-label="YouTube">
-            <img src="https://share1.cloudhq-mkt3.net/4885ce232c223d.png" alt="">
+          <a href="https://www.youtube.com/@1003theband" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <img src="https://share1.cloudhq-mkt3.net/4885ce232c223d.png" alt="YouTube" loading="lazy" width="48" height="48">
           </a>
 
-          <a href="https://1003.bandcamp.com/" target="_blank" rel="noopener" aria-label="Bandcamp">
-            <img src="https://share1.cloudhq-mkt3.net/01c6d4879b54f6.png" alt="">
+          <a href="https://1003.bandcamp.com/" target="_blank" rel="noopener noreferrer" aria-label="Bandcamp">
+            <img src="https://share1.cloudhq-mkt3.net/01c6d4879b54f6.png" alt="Bandcamp" loading="lazy" width="48" height="48">
           </a>
 
           <a href="mailto:1003theband@gmail.com" aria-label="Email">
-            <img src="https://share1.cloudhq-mkt3.net/5bc6b02edf353c.png" alt="">
+            <img src="https://share1.cloudhq-mkt3.net/5bc6b02edf353c.png" alt="Email" loading="lazy" width="48" height="48">
           </a>
 
-          <button class="icon-button" type="button" data-whatsapp aria-label="Afficher le numéro WhatsApp">
-            <img src="https://share1.cloudhq-mkt3.net/32931e030e4832.png" alt="">
+          <button id="whatsapp-toggle" class="icon-button" type="button" aria-label="Afficher le numéro WhatsApp" aria-expanded="false" aria-controls="whatsapp-modal">
+            <img src="https://share1.cloudhq-mkt3.net/32931e030e4832.png" alt="WhatsApp" width="48" height="48" loading="lazy">
           </button>
         </div>
 
         <div class="footer-logo">
-          <img src="https://share1.cloudhq-mkt3.net/7557f0b8200ffd.jpeg" alt="1003">
+          <img src="https://share1.cloudhq-mkt3.net/7557f0b8200ffd.jpeg" alt="1003 logo" loading="lazy" width="200" height="80">
         </div>
       </div>
     </section>
 
   </main>
 
-  <div class="modal" id="whatsapp-modal" aria-hidden="true">
-    <div class="modal-panel" role="dialog" aria-modal="true" aria-label="WhatsApp">
-      <button class="modal-close" type="button" data-close>×</button>
+  <div class="modal" id="whatsapp-modal" aria-hidden="true" hidden>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-label="WhatsApp" tabindex="-1">
+      <button class="modal-close" type="button" data-close aria-label="Fermer la fenêtre">×</button>
       <h3>WhatsApp</h3>
       <p class="phone">+33 6 01 19 09 00</p>
       <div class="modal-actions">
-        <a href="https://wa.me/33601190900" target="_blank" rel="noopener">Ouvrir WhatsApp</a>
+        <a href="https://wa.me/33601190900" target="_blank" rel="noopener noreferrer">Ouvrir WhatsApp</a>
         <button type="button" data-copy>Copier le numéro</button>
       </div>
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <!-- Defer script so it doesn't block initial render -->
+  <script src="script.js" defer></script>
 </body>
 </html>
