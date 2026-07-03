@@ -19,8 +19,9 @@ body{
 a{color:inherit}
 img{display:block;max-width:100%;height:auto}
 .wrap{width:min(var(--max),calc(100% - 40px));margin:0 auto}
+
 .hero{
-  padding:54px 0 18px;
+  padding:54px 0 12px;
   text-align:center;
 }
 .logo-main{
@@ -36,7 +37,7 @@ img{display:block;max-width:100%;height:auto}
 }
 .tagline{
   max-width:780px;
-  margin:22px auto 30px;
+  margin:22px auto 26px;
   font-size:clamp(19px,2.4vw,28px);
   line-height:1.28;
 }
@@ -44,12 +45,10 @@ img{display:block;max-width:100%;height:auto}
   display:flex;
   justify-content:center;
   align-items:center;
-  gap:0;
   flex-wrap:wrap;
-  margin:16px auto 0;
+  margin:12px auto 0;
 }
 .hero-nav a{
-  position:relative;
   display:inline-flex;
   align-items:center;
   justify-content:center;
@@ -70,11 +69,12 @@ img{display:block;max-width:100%;height:auto}
   border-color:var(--accent);
   color:var(--accent);
 }
+
 .section{
   padding:54px 0;
   border-top:1px solid rgba(255,255,255,.10);
 }
-.section-tight{padding-top:30px}
+.section-tight{padding-top:24px}
 .grid{
   display:grid;
   gap:38px;
@@ -99,11 +99,33 @@ p{
   background:#090909;
 }
 .image-frame img{width:100%}
-.video-link{
-  position:relative;
-  text-decoration:none;
 
+/* VIDEO YOUTUBE — corrigé */
+.video-section{
+  padding:72px 0;
 }
+.video-full{
+  width:min(1400px, calc(100vw - 48px));
+  margin:0 auto;
+}
+.youtube-player{
+  position:relative;
+  width:100%;
+  padding-top:56.25%;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.12);
+  background:#000;
+  border-radius:6px;
+}
+.youtube-player iframe{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  border:0;
+  display:block;
+}
+
 blockquote{
   margin:0 0 24px;
   padding-left:18px;
@@ -243,6 +265,7 @@ cite{
   opacity:1;
   transform:none;
 }
+
 @media(max-width:760px){
   .wrap{width:min(100% - 28px,var(--max))}
   .hero{padding:36px 0 8px}
@@ -255,11 +278,13 @@ cite{
     margin:5px 0;
   }
   .section{padding:42px 0}
-  .section-tight{padding-top:22px}
+  .section-tight{padding-top:20px}
   .two-col{grid-template-columns:1fr}
+  .video-section{padding:52px 0}
+  .video-full{width:min(100% - 20px, 1400px)}
   .download-grid{grid-template-columns:1fr}
   .social-row{gap:16px}
   .social-row a,.icon-button{width:38px;height:38px}
   .social-row img{width:34px}
   .modal-actions{grid-template-columns:1fr}
-
+}
