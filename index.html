@@ -5,21 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>1003 — EPK</title>
   <meta name="description" content="EPK officiel de 1003 — Art Pop, Rock Industriel, Techno.">
+
+  <!-- SEO & Social -->
+  <link rel="canonical" href="https://jessybengold.github.io/1003-EPK/">
   <meta property="og:title" content="1003 — EPK">
   <meta property="og:description" content="Art Pop, Rock Industriel, Techno — brutal, raffiné, cinématique.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jessybengold.github.io/1003-EPK/">
   <meta property="og:image" content="https://share1.cloudhq-mkt3.net/884cfe270614de.jpeg">
+  <meta name="theme-color" content="#000000">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@1003theband">
+  <meta name="twitter:title" content="1003 — EPK">
+  <meta name="twitter:description" content="EPK officiel de 1003 — Art Pop, Rock Industriel, Techno.">
+  <meta name="twitter:image" content="https://share1.cloudhq-mkt3.net/884cfe270614de.jpeg">
+
   <link rel="icon" href="/favicon.ico">
-  <!-- Preconnect to speed up external images/fonts if you use them -->
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Preconnect / Preload for performance -->
+  <link rel="preconnect" href="https://www.youtube.com" crossorigin>
+  <link rel="preconnect" href="https://share1.cloudhq-mkt3.net" crossorigin>
   <link rel="preload" as="image" href="Images%20Github%20EPK/HEADBANNER.jpg">
+
   <link rel="stylesheet" href="style.css">
+
   <!-- Structured data for better discovery -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "MusicGroup",
     "name": "1003",
-    "url": "https://your-site.example",
+    "url": "https://jessybengold.github.io/1003-EPK/",
     "description": "1003 fusionne Art Pop, Rock Industriel et Techno dans un univers brutal, raffiné, cinématique et introspectif.",
     "sameAs": [
       "https://www.instagram.com/1003theband/",
@@ -37,8 +56,11 @@
 
     <header class="hero" id="top">
       <div class="wrap hero-inner reveal">
-        <!-- Fixed malformed img tag and preloaded hero image -->
-        <img class="logo-main" src="Images%20Github%20EPK/HEADBANNER.jpg" alt="1003 — bannière" width="1600" height="500" loading="eager">
+        <!-- Hero / main H1 for SEO (visually hidden) -->
+        <h1 class="sr-only">1003 — EPK officiel</h1>
+
+        <!-- Keep existing image paths to avoid breaking the site; add fetchpriority for hero -->
+        <img class="logo-main" src="Images%20Github%20EPK/HEADBANNER.jpg" alt="1003 — bannière" width="1600" height="500" loading="eager" fetchpriority="high">
 
         <p class="kicker">Electronic / Industrial / Art Pop</p>
         <p class="tagline">
@@ -47,8 +69,8 @@
 
         <nav class="hero-nav" aria-label="Navigation EPK">
           <ul>
-            <li><a href="#video">Watch live session</a></li>
-            <li><a href="#downloads">Downloads</a></li>
+            <li><a href="#video">Regarder la session live</a></li>
+            <li><a href="#downloads">Téléchargements</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -58,7 +80,7 @@
     <section class="section section-tight" id="about">
       <div class="wrap grid two-col reveal">
         <div>
-          <h1>À propos</h1>
+          <h2>À propos</h2>
           <p>
             Véritable OVNI musical, 1003 fusionne Art Pop, Rock Industriel et Techno dans un univers aussi brutal que raffiné.
             À l’équilibre entre David Bowie, Nine Inch Nails, Thom Yorke et James Blake, le quatuor français mêle puissance et fragilité,
@@ -68,8 +90,7 @@
         </div>
 
         <figure class="image-frame">
-          <!-- Fixed malformed img tag, added loading and alt -->
-          <img src="Images%20Github%20EPK/BAND.PNG.jpg" alt="1003 en live, photo de presse" loading="lazy" width="800" height="533">
+          <img src="Images%20Github%20EPK/BAND.PNG.jpg" alt="1003 en live, photo de presse" loading="lazy" width="800" height="533'>
           <figcaption class="sr-only">Photo presse — 1003 live</figcaption>
         </figure>
       </div>
@@ -93,19 +114,19 @@
       <div class="wrap grid two-col reveal">
         <div>
           <h2>Live</h2>
-          <p style="margin-bottom:28px;">Selected performances</p>
+          <p style="margin-bottom:28px;">Performances sélectionnées</p>
 
           <ul class="live-list">
-            <li>2026 — Festival / Venue — City</li>
-            <li>2026 — Festival / Venue — City</li>
-            <li>2026 — Festival / Venue — City</li>
-            <li>2026 — Festival / Venue — City</li>
-            <li>2025 — Festival / Venue — City</li>
-            <li>2025 — Festival / Venue — City</li>
-            <li>2025 — Festival / Venue — City</li>
-            <li>2025 — Festival / Venue — City</li>
-            <li>2024 — Festival / Venue — City</li>
-            <li>2024 — Festival / Venue — City</li>
+            <li><time datetime="2026">2026</time> — Festival / Venue — City</li>
+            <li><time datetime="2026">2026</time> — Festival / Venue — City</li>
+            <li><time datetime="2026">2026</time> — Festival / Venue — City</li>
+            <li><time datetime="2026">2026</time> — Festival / Venue — City</li>
+            <li><time datetime="2025">2025</time> — Festival / Venue — City</li>
+            <li><time datetime="2025">2025</time> — Festival / Venue — City</li>
+            <li><time datetime="2025">2025</time> — Festival / Venue — City</li>
+            <li><time datetime="2025">2025</time> — Festival / Venue — City</li>
+            <li><time datetime="2024">2024</time> — Festival / Venue — City</li>
+            <li><time datetime="2024">2024</time> — Festival / Venue — City</li>
           </ul>
         </div>
 
@@ -144,21 +165,21 @@
 
     <section class="section" id="downloads">
       <div class="wrap reveal">
-        <h2 class="center">Downloads</h2>
+        <h2 class="center">Téléchargements</h2>
 
         <div class="download-grid">
           <a class="download-card" href="https://drive.google.com/drive/folders/1EQS9Rs9G4BqkwMEI6n2nkFjMTMk5qPyb?usp=drive_link" target="_blank" rel="noopener noreferrer">
-            <span>Download</span>
+            <span>Télécharger</span>
             <strong>Promo Pack</strong>
           </a>
 
           <a class="download-card" href="https://drive.google.com/file/d/1VfgDSn5XzcuvcKasqzpg5sgijc0sTNuW/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
-            <span>Download</span>
+            <span>Télécharger</span>
             <strong>Rider</strong>
           </a>
 
           <a class="download-card" href="https://drive.google.com/file/d/1qWmzGlSgHFnibY8YZKWJg0N5kRtb0XUp/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
-            <span>Download</span>
+            <span>Télécharger</span>
             <strong>Patch</strong>
           </a>
         </div>
@@ -182,7 +203,7 @@
             <img src="https://share1.cloudhq-mkt3.net/01c6d4879b54f6.png" alt="Bandcamp" loading="lazy" width="48" height="48">
           </a>
 
-          <a href="mailto:1003theband@gmail.com" aria-label="Email">
+          <a href="mailto:1003theband@gmail.com" aria-label="Email"> 
             <img src="https://share1.cloudhq-mkt3.net/5bc6b02edf353c.png" alt="Email" loading="lazy" width="48" height="48">
           </a>
 
@@ -200,10 +221,10 @@
   </main>
 
   <div class="modal" id="whatsapp-modal" aria-hidden="true" hidden>
-    <div class="modal-panel" role="dialog" aria-modal="true" aria-label="WhatsApp" tabindex="-1">
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="whatsapp-title" aria-describedby="whatsapp-desc" tabindex="-1">
       <button class="modal-close" type="button" data-close aria-label="Fermer la fenêtre">×</button>
-      <h3>WhatsApp</h3>
-      <p class="phone">+33 6 01 19 09 00</p>
+      <h3 id="whatsapp-title">WhatsApp</h3>
+      <p id="whatsapp-desc" class="phone">+33 6 01 19 09 00</p>
       <div class="modal-actions">
         <a href="https://wa.me/33601190900" target="_blank" rel="noopener noreferrer">Ouvrir WhatsApp</a>
         <button type="button" data-copy>Copier le numéro</button>
