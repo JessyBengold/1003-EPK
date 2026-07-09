@@ -181,9 +181,9 @@ p{
 
 .release-download-card{
   display:grid;
-  grid-template-columns:96px 1fr;
+  grid-template-columns:180px 1fr;
   align-items:center;
-  gap:18px;
+  gap:24px;
   border:1px solid var(--line-strong);
   padding:16px;
   text-align:left;
@@ -197,8 +197,8 @@ p{
 }
 
 .release-download-card img{
-  width:96px;
-  height:96px;
+  width:180px;
+  height:180px;
   aspect-ratio:1/1;
   object-fit:cover;
 }
